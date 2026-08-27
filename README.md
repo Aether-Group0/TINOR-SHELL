@@ -1,5 +1,7 @@
 # Tinor Shell
 
+[![License](https://img.shields.io/github/license/Aether-Group0/TINOR-SHELL)](LICENSE) [![Last Commit](https://img.shields.io/github/last-commit/Aether-Group0/TINOR-SHELL)](https://github.com/Aether-Group0/TINOR-SHELL/commits) [![Top Language](https://img.shields.io/github/languages/top/Aether-Group0/TINOR-SHELL)](https://github.com/Aether-Group0/TINOR-SHELL) [![Open Issues](https://img.shields.io/github/issues/Aether-Group0/TINOR-SHELL)](https://github.com/Aether-Group0/TINOR-SHELL/issues) [![Made with Python](https://img.shields.io/badge/python-3.8%2B-blue?logo=python)](https://www.python.org/)
+
 Tinor Shell is a wrapper around the Windows cmd experience that provides additional convenience features and a small set of network, chat and lookup utilities. It is intended for experimental and educational use only.
 
 Important: Tinor Shell includes code that launches network scans, starts servers and launches external tools. These capabilities are potentially dangerous if misused or run on production networks. Read the Security & Safe Usage section before running anything.
@@ -17,7 +19,6 @@ Important: Tinor Shell includes code that launches network scans, starts servers
 - [Examples](#examples)
 - [Developer Notes](#developer-notes)
 - [Security & Safe Usage](#security--safe-usage)
-- [Repository hygiene (what to remove before publishing)](#repository-hygiene-what-to-remove-before-publishing)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -177,8 +178,7 @@ Review the repository LICENSE file for licensing details.
 ## Contact / Further help
 
 If you want, I can:
-- commit this README into the repository,
-- create a `.gitignore` for you,
+- commit a recommended `.gitignore` for you,
 - scan the entire repo for secret-looking patterns (API keys, private keys, IP addresses, absolute paths),
 - or propose code changes to reduce subprocess risks (remove shell=True and add input validation).
 
