@@ -160,46 +160,6 @@ Suggested code hardening:
 
 ---
 
-## Repository hygiene — things to remove before publishing
-
-- Remove `__pycache__` and compiled Python bytecode (`*.pyc`) from the repository.
-- Inspect these directories for secrets and sensitive files and remove anything not intended for public release:
-  - `Tinor Shell/Utils/__ssh_Resources__`
-  - `Tinor Shell/Utils/__Resources__`
-  - `Tinor Shell/Utils/__LAN_CHAT__`
-  - `Tinor Shell/Utils/__WAN_CHAT__`
-  - `Tinor Shell/SF_Source/` and subfolders
-- Add a `.gitignore` (example snippet below) and remove sensitive items from git history if they were previously committed.
-
-Example `.gitignore` snippet (place in repository root):
-```
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-venv/
-env/
-.Python
-
-# Configs & secrets
-.env
-*.pem
-id_rsa
-id_rsa.pub
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDEs
-.vscode/
-.idea/
-```
-
-If secrets have been committed, use tools like `git filter-repo` or the BFG Repo Cleaner to remove them, then rotate the secrets.
-
----
-
 ## Contributing
 
 - This project appears to be an in-progress prototype. If you would like contributions:
