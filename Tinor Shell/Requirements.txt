@@ -1,0 +1,6 @@
+Nmap
+Fern-Multi-Tool
+python 1.14
+Requests
+windows 10-11
+winotify
